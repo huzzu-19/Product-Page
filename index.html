@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: f4f6f8;
+            padding: 40px 20px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .product-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .card{
+            background-color: #ffffff;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .card img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-body{
+            padding: 20px;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        .discription{
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .price{
+            font-size: 18px;
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .card button{
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .card button:hover{
+            background-color: #0056b3;
+        }
+        @media (max-width:600px){
+            .card{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Product</h1>
+    <div class="product-container">
+        <div class="card">
+            <img src="./watch image.png" alt="Watch">
+            <div class="card-body">
+                <div class="title">BIDEN Men's Watch</div>
+                    <div class="discription">BIDEN Mens Watches Chronograph Stainless Steel Waterproof.</div>
+                        <div class="price">$999</div>
+                            <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./shoes image.jpg" alt="Shoes">
+            <div class="card-body">
+                <div class="title">Viscous Mens Shoes</div>
+                    <div class="discription">Fits all dream sports shoe requirements.</div>
+                        <div class="price">$299</div>
+                            <button>Buy Now</button>
+            </div>                
+        </div>
+        <div class="card">
+            <img src="./air buds images.jpg" alt="Air Buds">
+                <div class="card-body">
+                    <div class="title">M10 Airpods TWS</div>
+                        <div class="discription">M10 Airpods TWS (True Wireless Stereo) Airbuds Bluetooth Earbuds.</div>
+                             <div class="price">$199</div>
+                                 <button>Buy Now</button>
+                </div>    
+        </div>
+        <div class="card">
+            <img src="./camera image.jpg" alt="Camera">
+             <div class="card-body">
+                 <div class="title">DSLR Camera</div>
+                     <div class="discription">welcomes you to the vibrant realm of photography.</div>
+                        <div class="price">$1999</div>
+                            <button>Buy Now</button>
+            </div>                
+        </div>
+    </div>
+</body>
+</html>
